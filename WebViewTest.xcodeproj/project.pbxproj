@@ -13,6 +13,8 @@
 		E911243D2024D79E003DC9D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E911243C2024D79E003DC9D5 /* Assets.xcassets */; };
 		E91124402024D79E003DC9D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E911243E2024D79E003DC9D5 /* LaunchScreen.storyboard */; };
 		E91124432024D79E003DC9D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E91124422024D79E003DC9D5 /* main.m */; };
+		E911244A2024E060003DC9D5 /* PDF in Resources */ = {isa = PBXBuildFile; fileRef = E91124492024E05F003DC9D5 /* PDF */; };
+		E911244D2025B901003DC9D5 /* PMWebKitController.m in Sources */ = {isa = PBXBuildFile; fileRef = E911244C2025B901003DC9D5 /* PMWebKitController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		E911243F2024D79E003DC9D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E91124412024D79E003DC9D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E91124422024D79E003DC9D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E91124492024E05F003DC9D5 /* PDF */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PDF; sourceTree = "<group>"; };
+		E911244B2025B900003DC9D5 /* PMWebKitController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMWebKitController.h; sourceTree = "<group>"; };
+		E911244C2025B901003DC9D5 /* PMWebKitController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMWebKitController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,9 @@
 		E91124322024D79E003DC9D5 /* WebViewTest */ = {
 			isa = PBXGroup;
 			children = (
+				E91124492024E05F003DC9D5 /* PDF */,
+				E911244B2025B900003DC9D5 /* PMWebKitController.h */,
+				E911244C2025B901003DC9D5 /* PMWebKitController.m */,
 				E91124332024D79E003DC9D5 /* AppDelegate.h */,
 				E91124342024D79E003DC9D5 /* AppDelegate.m */,
 				E91124362024D79E003DC9D5 /* ViewController.h */,
@@ -130,6 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E91124402024D79E003DC9D5 /* LaunchScreen.storyboard in Resources */,
+				E911244A2024E060003DC9D5 /* PDF in Resources */,
 				E911243D2024D79E003DC9D5 /* Assets.xcassets in Resources */,
 				E911243B2024D79E003DC9D5 /* Main.storyboard in Resources */,
 			);
@@ -144,6 +153,7 @@
 			files = (
 				E91124382024D79E003DC9D5 /* ViewController.m in Sources */,
 				E91124432024D79E003DC9D5 /* main.m in Sources */,
+				E911244D2025B901003DC9D5 /* PMWebKitController.m in Sources */,
 				E91124352024D79E003DC9D5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +293,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PM.WebViewTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -296,7 +306,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PM.WebViewTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
